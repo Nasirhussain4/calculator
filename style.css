@@ -1,0 +1,98 @@
+:root {
+    --light-bg: #f1f1f1;
+    --light-text: #000;
+    --dark-bg: #1e1e1e;
+    --dark-text: #fff;
+  
+    --btn-gray: #dcdcdc;
+    --btn-operator: #f9a825;
+    --btn-action: #e53935;
+    --btn-equal: #43a047;
+    --btn-sci: #64b5f6;
+  }
+  
+  /* Base */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .theme-light {
+    background-color: var(--light-bg);
+    color: var(--light-text);
+  }
+  
+  .theme-dark {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+  }
+  
+  /* Layout */
+  .theme-toggle {
+    text-align: right;
+    padding: 10px 20px;
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 0 20px;
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .display {
+    background: #eee;
+    padding: 20px;
+    font-size: 2rem;
+    text-align: right;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    overflow-x: auto;
+  }
+  
+  /* Buttons Grid */
+  .buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  .btn {
+    padding: 18px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: var(--btn-gray);
+  }
+  
+  .btn-operator {
+    background-color: var(--btn-operator);
+    color: #fff;
+  }
+  
+  .btn-action {
+    background-color: var(--btn-action);
+    color: #fff;
+  }
+  
+  .btn-sci {
+    background-color: var(--btn-sci);
+    color: #fff;
+  }
+  
+  .btn-equal {
+    background-color: var(--btn-equal);
+    color: #fff;
+  }
+  
+  .btn-zero {
+    grid-column: span 2;
+  }
+  
