@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced Calculator</title>
+  <link rel="stylesheet" href="style0.css" />
+</head>
+<body class="theme-light">
+
+  <!-- Theme Toggle -->
+  <div class="theme-toggle">
+    <label for="theme-switch">
+      <input type="checkbox" id="theme-switch" />
+      Dark Mode
+    </label>
+  </div>
+
+  <!-- Calculator App -->
+  <main class="container">
+    <h1 class="title">Advanced Calculator</h1>
+
+    <div class="calculator">
+      <div id="calc-display" class="display">0</div>
+
+      <div class="buttons-grid">
+        <!-- Action Buttons -->
+        <button class="btn btn-action" onclick="clearCalc()">C</button>
+        <button class="btn btn-action" onclick="deleteLast()">⌫</button>
+        <button class="btn btn-operator" onclick="appendToCalc('/')">÷</button>
+        <button class="btn btn-operator" onclick="appendToCalc('*')">×</button>
+
+        <!-- Scientific Functions -->
+        <button class="btn btn-sci" onclick="appendToCalc('Math.sin(')">sin</button>
+        <button class="btn btn-sci" onclick="appendToCalc('Math.cos(')">cos</button>
+        <button class="btn btn-sci" onclick="appendToCalc('Math.tan(')">tan</button>
+        <button class="btn btn-sci" onclick="appendToCalc('Math.log10(')">log</button>
+
+        <!-- Numbers & Operators -->
+        <button class="btn" onclick="appendToCalc('7')">7</button>
+        <button class="btn" onclick="appendToCalc('8')">8</button>
+        <button class="btn" onclick="appendToCalc('9')">9</button>
+        <button class="btn btn-operator" onclick="appendToCalc('-')">−</button>
+
+        <button class="btn" onclick="appendToCalc('4')">4</button>
+        <button class="btn" onclick="appendToCalc('5')">5</button>
+        <button class="btn" onclick="appendToCalc('6')">6</button>
+        <button class="btn btn-operator" onclick="appendToCalc('+')">+</button>
+
+        <button class="btn" onclick="appendToCalc('1')">1</button>
+        <button class="btn" onclick="appendToCalc('2')">2</button>
+        <button class="btn" onclick="appendToCalc('3')">3</button>
+        <button class="btn btn-equal" onclick="calculateResult()">=</button>
+
+        <button class="btn btn-zero" onclick="appendToCalc('0')">0</button>
+        <button class="btn" onclick="appendToCalc('.')">.</button>
+        <button class="btn btn-sci" onclick="appendToCalc('Math.sqrt(')">√</button>
+        <button class="btn btn-sci" onclick="appendToCalc('Math.pow(')">^</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="scrift1.js"></script>
+</body>
+</html>
